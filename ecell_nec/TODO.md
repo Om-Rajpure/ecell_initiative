@@ -1,0 +1,2 @@
+- [x] Restructure HTML in index.html: Move nec-image outside nec-box into a new nec-image-box container.
+- [x] Update CSS in style.css: Make nec-section a flex container, style nec-image-box and adjust nec-box.
