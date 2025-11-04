@@ -32,11 +32,11 @@ body {
 
 /* ---------- Hero (background image + overlay) ---------- */
 .enspire-hero {
-  margin-top: 6px;
+  margin-top: 90px;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-  height: 320px;                 /* desktop height */
+  height: auto;                 /* desktop height */
   background: #000;
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@ body {
 
 /* logo + CTA */
 .enspire-logo {
-  height: 280px;
+  height: 350px;
   display: block;
   margin: 0 auto 12px;
   object-fit: contain;
@@ -78,7 +78,7 @@ body {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   box-shadow: 0 8px 26px rgba(233,59,54,0.18);
-  margin: 10px 0 14px;
+  margin: 0 0 54px;
   font-size: 14px;
   transition: transform .14s ease, box-shadow .14s ease;
 }
@@ -131,7 +131,7 @@ body {
 .events-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;                     /* tightened spacing for denser layout */
+  gap: 34px;                     /* tightened spacing for denser layout */
   align-items: center;
   justify-items: center;
   margin-top: 8px;
@@ -155,11 +155,13 @@ body {
 .event-tile span { color: #f6b84a; font-weight: 700; font-size: 13px; margin-top: 8px; }
 
 /* ---------- SPONSORS ---------- */
-.sponsors { margin-top: 28px; text-align: center; }
+.sponsors { margin-top: 98px;
+  margin-bottom: 50px;
+   text-align: center; }
 .sponsor-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 28px;
   justify-content: center;
   margin-top: 12px;
   max-width: calc((82px * 6) + (12px * 5)); /* 6 items + 5 gaps */
@@ -174,7 +176,7 @@ body {
   align-items: center;
   justify-content: center;
   background: linear-gradient(180deg,#ffd24d 0%, #ff5a2e 55%, #c92a2a 100%);
-  padding: 10px;
+  padding: 10px ;
   box-shadow: 0 12px 30px rgba(0,0,0,0.45);
 }
 .sponsor-item img {
@@ -215,21 +217,25 @@ body {
 </head>
 <body>
   <!-- Navbar -->
-  <header class="navbar">
-    <div class="nav-left">
-      <img src="images/ecell_logo.png" alt="E-CELL DMCE Logo" class="logo">
-      <span class="brand"></span>
-    </div>
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Event</a>
-      <a href="#">Gallery</a>
-      <a href="#">Team</a>
-      <a href="#" class="active">Initiative</a>
-      <a href="#">Blogs</a>
-    </nav>
+  <header>
+    <div class="nav-container">
+            <a href="https://e-celldmce.github.io/ecelldmcehome/" target="_blank">
+                <img src="images/ecell_logo.png" alt="E-CELL Logo" />
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#initiative" class="active">INITIATIVE</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                </ul>
+            </nav>
+
   </header>
+
 
   <!-- HERO -->
   <section class="enspire-hero" role="region" aria-label="Enspire hero">
